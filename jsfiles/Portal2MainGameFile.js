@@ -506,34 +506,16 @@ function init(){
 		//scene.add(cake);
 	});
 
-	loader.load('models/radio/scene.gltf', function(gltf){
-
-		
-		//console.log(dumpObject(gltf.scene).join('\n'));
-		radio = gltf.scene; //figlio della scena
-		//radio = radio.getObjectByName( "Radio002", true );
-		radio.scale.set(0.01,0.01,0.01)
-		scene.add(radio);
-		radio.position.set(11.37, 20, -4.0);
-		radio.rotation.set(0,Math.PI/2 -Math.PI/8, 0);
-		radio.add(RadioMusic);
-		
-		tv.castShadow = true;
-		tv.position.set(-26.5,20.35,0.7);
-		tv.rotation.set(-Math.PI*0.5,0,Math.PI*0.5);
-		scene.add(tv);
-	});
-
-
-	// loader.load('PortalMiscellaneous/portalradio.glb', function(gltf){
+	// loader.load('models/radio/scene.gltf', function(gltf){
 
 		
 	// 	//console.log(dumpObject(gltf.scene).join('\n'));
 	// 	radio = gltf.scene; //figlio della scena
-	// 	radio = radio.getObjectByName( "Radio002", true );
+	// 	//radio = radio.getObjectByName( "Radio002", true );
+	// 	radio.scale.set(0.01,0.01,0.01)
 	// 	scene.add(radio);
-	// 	radio.position.set(11.87, 20, -3.5);
-	// 	radio.rotation.set(0,-Math.PI*0.5 - Math.PI/8,0);
+	// 	radio.position.set(11.37, 20, -4.0);
+	// 	radio.rotation.set(0,Math.PI/2 -Math.PI/8, 0);
 	// 	radio.add(RadioMusic);
 		
 	// 	tv.castShadow = true;
@@ -541,6 +523,24 @@ function init(){
 	// 	tv.rotation.set(-Math.PI*0.5,0,Math.PI*0.5);
 	// 	scene.add(tv);
 	// });
+
+
+	loader.load('portalradio.gltf', function(gltf){
+
+		
+		//console.log(dumpObject(gltf.scene).join('\n'));
+		radio = gltf.scene; //figlio della scena
+		radio = radio.getObjectByName( "Radio002", true );
+		scene.add(radio);
+		radio.position.set(11.87, 20, -3.5);
+		radio.rotation.set(0,-Math.PI*0.5 - Math.PI/8,0);
+		radio.add(RadioMusic);
+		
+		tv.castShadow = true;
+		tv.position.set(-26.5,20.35,0.7);
+		tv.rotation.set(-Math.PI*0.5,0,Math.PI*0.5);
+		scene.add(tv);
+	});
 
 	var video = document.getElementById( 'video' );
 
