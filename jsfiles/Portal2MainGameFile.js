@@ -187,7 +187,7 @@ function init(){
 		});
 
 	audioLoader.load( 'Portal gun Shooting Sound Effect.mp3', function( buffer ) {
-	portalGunSound = sound;
+	//portalGunSound = sound;
 	portalGunSound.setBuffer( buffer );
 	portalGunSound.setVolume( 0.2 );
 	});
