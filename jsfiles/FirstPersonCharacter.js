@@ -64,16 +64,16 @@ function FPC_onKeyDown(event)
 {
     switch ( event.which ) 
     {
-		case 38: /*up*/
+		//case 38: /*up*/
 		case 87: /*W*/ character.forward = -1; break;
 
-		case 37: /*left*/
+		//case 37: /*left*/
 		case 65: /*A*/ character.left = -1; break;
 
-		case 40: /*down*/
+		//case 40: /*down*/
 		case 83: /*S*/ character.back = 1; break;
 
-		case 39: /*right*/
+		//case 39: /*right*/
 		case 68: /*D*/ character.right = 1; break;
 
 		case 16: /*shift*/ character.running = true; break;
@@ -86,16 +86,16 @@ function FPC_onKeyUp ( event )
 {
     switch ( event.which ) 
     {
-		case 38: /*up*/
+		//case 38: /*up*/
 		case 87: /*W*/ character.forward = 0; break;
 
-		case 37: /*left*/
+		//case 37: /*left*/
 		case 65: /*A*/ character.left = 0; break;
 
-		case 40: /*down*/
+		//case 40: /*down*/
 		case 83: /*S*/ character.back = 0; break;
 
-		case 39: /*right*/
+		//case 39: /*right*/
         case 68: /*D*/ character.right = 0; break;
         
 		case 16: /*shift*/ character.running = false; break;

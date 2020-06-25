@@ -19,12 +19,14 @@ function PortalCollision(object, position, rotation, m_start, m_end)
         object.quaternion.copy(rotation);
         object.__dirtyRotation = true;
 
-        var m = m_start.clone().inverse();
-        var force = object.getLinearVelocity().clone();
-        force.applyQuaternion(m);
-        force.applyQuaternion(m_end);
+        object.setLinearVelocity(new THREE.Vector3(0,0,0));
 
-        object.setLinearVelocity(force.multiplyScalar(-1));
+        // var m = m_start.clone().inverse();
+        // var force = object.getLinearVelocity().clone();
+        // force.applyQuaternion(m);
+        // force.applyQuaternion(m_end);
+
+        // object.setLinearVelocity(force.multiplyScalar(-1));
     }
 
     if(object == grabObj)

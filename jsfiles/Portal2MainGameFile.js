@@ -385,8 +385,6 @@ function init(){
 		stairstep4 = testRoom.getObjectByName("grid2b001_0",true);
 		bottomFloorButton =  testRoom.getObjectByName("Pressure_button",true);
 
-		// topButton = bottomFloorButton.clone(true);
-		// scene.add(topButton);
 
 		panel = testRoom.getObjectByName("grid1_0",true);
 		column = testRoom.getObjectByName("Cylinder004",true);
@@ -418,9 +416,7 @@ function init(){
 		
 		testRoom.layers.enable(1);
 		
-		// button = testRoom.getObjectByName( "Pressure_button", true );
-		// button.matrixAutoUpdate = true;
-		// //button.rotation.set(-Math.PI*0.5,0,0);
+	
 		
 		boundingBoxButton.material.visible = true;
 		boundingBoxButton.scale.set(2*1.5,0.1,2*1.5);
@@ -431,7 +427,6 @@ function init(){
 
 		boundingBoxButton.layers.enable(1);
 
-		//boundingBoxButton2 = boundingBoxButton.clone(recursive=true);
 
 		boundingBoxButton2.position.set(-5.1 , 5.45, 5.3);
 		boundingBoxButton2.scale.set(2*1,0.3*2 - 0.5,2*1);
@@ -510,16 +505,19 @@ function init(){
 		//scene.add(cake);
 	});
 
-	loader.load('models/PortalMiscellaneous/scene.gltf', function(gltf){
+
+
+	loader.load('models/PortalMiscellaneous/portalradio.gltf', function(gltf){
 
 		
-		objects = gltf.scene; //figlio della scena
-	//	console.log(dumpObject(objects).join('\n'));
-		radio = objects.getObjectByName( "Radio002", true );
+		//console.log(dumpObject(gltf.scene).join('\n'));
+		radio = gltf.scene; //figlio della scena
+		radio = radio.getObjectByName( "Radio002", true );
 		scene.add(radio);
 		radio.position.set(11.87, 20, -3.5);
-		radio.rotation.set(-Math.PI*0.5,0,-Math.PI*0.5 - Math.PI/8);
+		radio.rotation.set(0,-Math.PI*0.5 - Math.PI/8,0);
 		radio.add(RadioMusic);
+		
 		tv.castShadow = true;
 		tv.position.set(-26.5,20.35,0.7);
 		tv.rotation.set(-Math.PI*0.5,0,Math.PI*0.5);
@@ -636,17 +634,40 @@ function init(){
 		
 	});
 
+	var material2 = Physijs.createMaterial(new THREE.MeshPhongMaterial({color:0xfffff,  wireframe:false}),1);
 
-	boundingBoxTurrets = new Physijs.BoxMesh( new THREE.BoxGeometry(1,1,1), materialCube, 1 );
+	boundingBoxTurrets = new Physijs.BoxMesh( new THREE.BoxGeometry(1,1,1), material2, 0 );
 	boundingBoxTurrets.position.set(-17.5 , 22, -14.89);
-	boundingBoxTurrets.scale.set(4,2,2);
+	boundingBoxTurrets.scale.set(8.29,5.39,4.5);
+	boundingBoxTurrets.material.visible = false;
+	boundingBoxCube3.layers.enable(1);
 
 	scene.add(boundingBoxTurrets);
 
+	var material3 = Physijs.createMaterial(new THREE.MeshPhongMaterial({color:0xffffff,  wireframe:false}),1);
 
-	
 
-	
+	boundingBoxAusiliar = new Physijs.BoxMesh( new THREE.BoxGeometry(1,1,1), material3,0 );
+	// The cube can have shadows cast onto it, and it can cast shadows
+	boundingBoxAusiliar.receiveShadow = true;
+	boundingBoxAusiliar.castShadow = true;
+	boundingBoxAusiliar.position.set(17.68, 37, 19.68);
+	boundingBoxAusiliar.rotation.set(0,0,Math.PI/2);
+	boundingBoxAusiliar.scale.set(5.6,0.3, 4.2)
+	scene.add(boundingBoxAusiliar);
+	boundingBoxAusiliar.layers.enable(1);
+
+
+	boundingBoxAusiliar1 = new Physijs.BoxMesh( new THREE.BoxGeometry(1,1,1), material3,0 );
+	// The cube can have shadows cast onto it, and it can cast shadows
+	boundingBoxAusiliar1.receiveShadow = true;
+	boundingBoxAusiliar1.castShadow = true;
+	boundingBoxAusiliar1.position.set(19.95, 37.4, 17.48);
+	boundingBoxAusiliar1.rotation.set(0,Math.PI/2,Math.PI/2);
+	boundingBoxAusiliar1.scale.set(4.69,0.4, 4.89)
+	scene.add(boundingBoxAusiliar1);
+	boundingBoxAusiliar1.layers.enable(1);
+
 	
 	
 	//BODY OF MY ROBOTS
@@ -868,7 +889,7 @@ function animate()
 	
 	boundingBoxTV.material.map.needsUpdate = true;
 
-//	PrintVector(character.camera.position);
+	PrintVector(character.camera.position);
 
 
 	if(justSpawned && character.camera.position.y <= 17.5) {
@@ -878,7 +899,7 @@ function animate()
 	}
 	Respawn();
 
-	//MoveObject(TopButton);
+	MoveObject(boundingBoxTurrets);
 
 
 	UpdateBody(delta);
