@@ -23,8 +23,15 @@ The commands are stated also in the starting Menu,but here will be reported agai
 The mechanics that I tried to implement are extremely complex, unoptimized(for as it is now..) and very powerful. 
 This brings along the major problem that if you force such mechanics,you will be able to break it. For that I implemented some respawn conditions to help the experience. 
 
-NOTE: I'm aware of how the force imprinted to the companion cubes passing the portals is slightly unstable. Don't worry, the cubes will respawn in the same spot where you found it
+***Known Bugs*** :
+- I'm aware of how the force imprinted to the companion cubes passing the portals is slightly unstable. Don't worry, the cubes will respawn in the same spot where you found it
 if they will break through the wall of the map.
+- if you try to enter inside the portals with specific combination of linear velocities-directions, you may not be able to pass by. It happens very,very rarely,but still happen. 
+
+***Fixed bugs*** :
+- fixed the camera adjustment when coming out of a portal placed upside down,or with strange angles with respect to the other portal.
+- added the possibility to fell forever between two portal in vertical line(signature feature for portal!)
+- added the hidden control that does not allow the portals to spawn with partially compenetrated outline on other object. From now on,if you try to create a portal on a surface where there is not enough space for it to appear, the gun will just not fire.
 
 Thanks for trying this game,and remember...
 
