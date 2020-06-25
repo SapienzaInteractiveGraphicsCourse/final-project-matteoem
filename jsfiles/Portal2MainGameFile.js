@@ -168,7 +168,7 @@ function init(){
 
 	
 	character.camera.add( listener );
-	
+	Lock();
 
 	// load a sound and set it as the PositionalAudio object's buffer
 	audioLoader.load( 'media/Portal Radio Tune.mp3', function( buffer ) {
