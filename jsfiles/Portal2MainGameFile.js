@@ -74,7 +74,6 @@ var boundingBoxCube3 = new THREE.Object3D();
 var spotLight = new THREE.SpotLight( 0xffff00,1 );
 var spotLight1 = new THREE.SpotLight( 0xffff00,1 );
 
-var portalGunSound;
 
 const geometry = new THREE.BoxBufferGeometry();
 const material = new THREE.MeshPhongMaterial({color:0xfffc00});
@@ -129,6 +128,7 @@ var listener = new THREE.AudioListener();
 var sound = new THREE.Audio( listener );
 var ending = new THREE.Audio( listener );
 var RadioMusic = new THREE.PositionalAudio( listener );
+var portalGunSound = new THREE.Audio( listener );
 
 var audioLoader = new THREE.AudioLoader(manager);
 
@@ -191,7 +191,7 @@ function init(){
 	portalGunSound.setBuffer( buffer );
 	portalGunSound.setVolume( 0.2 );
 	});
-
+	Println(portalGunSound);
 
 	renderer = new THREE.WebGLRenderer({antialias:true});
 	renderer.setSize(window.innerWidth,window.innerHeight);
