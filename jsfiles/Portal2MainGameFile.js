@@ -507,7 +507,7 @@ function init(){
 
 
 
-	loader.load('PortalMiscellaneous/portalradio.gltf', function(gltf){
+	loader.load('PortalMiscellaneous/portalradio.glb', function(gltf){
 
 		
 		//console.log(dumpObject(gltf.scene).join('\n'));
