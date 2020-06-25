@@ -33,7 +33,7 @@
    
     background-color: none;
    
-    background-image:url(/media/quest.png);
+    background-image:url(./media/quest.png);
    
     background-repeat:no-repeat;
      
@@ -48,7 +48,7 @@ h2 {
   }
 
   button {
-    background-image: url(/media/playsingleplayer.png);
+    background-image: url(./media/playsingleplayer.png);
     background-repeat: no-repeat;
     background-position: 10% 50%;
     height: 40px;
