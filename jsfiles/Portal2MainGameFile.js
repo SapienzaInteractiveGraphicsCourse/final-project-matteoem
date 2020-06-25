@@ -185,7 +185,7 @@ function init(){
 		ending.autoplay=false;
 		});
 
-	audioLoader.load( 'media/Portal gun Shooting Sound Effect.mp3', function( buffer ) {
+	audioLoader.load( 'Portal gun Shooting Sound Effect.mp3', function( buffer ) {
 	portalGunSound = sound;
 	portalGunSound.setBuffer( buffer );
 	portalGunSound.setVolume( 0.2 );
@@ -507,7 +507,7 @@ function init(){
 
 
 
-	loader.load('models/PortalMiscellaneous/portalradio.gltf', function(gltf){
+	loader.load('PortalMiscellaneous/portalradio.gltf', function(gltf){
 
 		
 		//console.log(dumpObject(gltf.scene).join('\n'));
