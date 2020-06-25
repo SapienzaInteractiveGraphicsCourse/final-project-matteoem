@@ -8,6 +8,7 @@ the beatiful masterpiece of videogame that Portal is.
 
 The commands are stated also in the starting Menu,but here will be reported again:
 
+- ![#0000ff](https://via.placeholder.com/15/ff0000/000000?text=+) `lock your mouse pressing CTRL. You can esc from this mouse pointer-less mode pressing ESC`
 - ![#0000ff](https://via.placeholder.com/15/c8c8c8/000000?text=+) `Use W-A-S-D to move around`
 - ![#0000ff](https://via.placeholder.com/15/c8c8c8/000000?text=+) `Hold shift to sprint`
 - ![#0000ff](https://via.placeholder.com/15/c8c8c8/000000?text=+) `Grab The Companion Cubes with E`
@@ -26,12 +27,16 @@ This brings along the major problem that if you force such mechanics,you will be
 ***Known Bugs*** :
 - I'm aware of how the force imprinted to the companion cubes passing the portals is slightly unstable. Don't worry, the cubes will respawn in the same spot where you found it
 if they will break through the wall of the map.
-- if you try to enter inside the portals with specific combination of linear velocities-directions, you may not be able to pass by. It happens very,very rarely,but still happen. 
+- if you try to enter inside the portals with specific combination of linear velocities-directions, you may not be able to pass by. It happens very,very rarely,but still happen.
+- With some browsers version, ***you may have some things that are not loaded properly***, or even crashes before the start of the game,remaining stucked in the loading screen. In this case, I suggest to try with another browser.
+- if you are having trouble with the ***mouse being locked*** remember the command to enter and exit the locked mouse mode. If they are not working, it's because of some issue related to the browser itself
+- In some users the portalgun sound that occure when pressing L/R mouse button, use to be missing. It's an issue related to the loading of the browser. It will not break anything,exept the fact that the gun will not emit any sound when shooting
 
 ***Fixed bugs*** :
 - fixed the camera adjustment when coming out of a portal placed upside down,or with strange angles with respect to the other portal.
 - added the possibility to fell forever between two portal in vertical line(signature feature for portal!)
 - added the hidden control that does not allow the portals to spawn with partially compenetrated outline on other object. From now on,if you try to create a portal on a surface where there is not enough space for it to appear, the gun will just not fire.
+- ***partially*** fixed the problem of the companion cube flying away when passing through the portal. This is probably the hardest fix to do, having to deal with the forces. Some major improvement has been done so far though.
 
 Thanks for trying this game,and remember...
 
