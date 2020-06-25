@@ -37,6 +37,7 @@ if they will break through the wall of the map.
 - added the possibility to fell forever between two portal in vertical line(signature feature for portal!)
 - added the hidden control that does not allow the portals to spawn with partially compenetrated outline on other object. From now on,if you try to create a portal on a surface where there is not enough space for it to appear, the gun will just not fire.
 - ***partially*** fixed the problem of the companion cube flying away when passing through the portal. This is probably the hardest fix to do, having to deal with the forces. Some major improvement has been done so far though.
+- fixed the problem of the signature radio from Portal that used to disappear,giving trouble with the loader.
 
 Thanks for trying this game,and remember...
 
