@@ -6,6 +6,7 @@ RECREATION OF THE GAME PORTAL.
 PORTAL 2 is a Puzzle game-like published by Valve Corporation in 2011. This recreation in javascript using three.js & physi.js wants to be the sincerest form of flattery for
 the beatiful masterpiece of videogame that Portal is.
 - The link for trying the game is on the bottom of this file.
+- if you want to give me any feedback as a user, feel free to contact me!
 
 ![Alt text](https://i.gyazo.com/05ff2d83af11e9547510557b34650990.png)
 
