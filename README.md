@@ -59,3 +59,5 @@ Thanks for trying this game,and remember...
 
 
 Made By Matteo Emanuele
+
+P.S. if you want to download this project or make any use, please ask first to matteoemanuele0@gmail.com
