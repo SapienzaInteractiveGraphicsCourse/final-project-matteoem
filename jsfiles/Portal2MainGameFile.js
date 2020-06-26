@@ -901,7 +901,7 @@ function animate()
 	}
 	Respawn();
 
-	MoveObject(radio);
+//	MoveObject(radio);
 
 
 	UpdateBody(delta);
@@ -1151,13 +1151,17 @@ function activateButton2(boundingBoxButton)
 function activateButton3(boundingBoxButton)
 {
 	raycasterB = new THREE.Raycaster(new THREE.Vector3(boundingBoxButton.position.x,boundingBoxButton.position.y,boundingBoxButton.position.z), new THREE.Vector3(0,1,0));
+	raycasterA = new THREE.Raycaster(new THREE.Vector3(boundingBoxButton.position.x-0.1,boundingBoxButton.position.y,boundingBoxButton.position.z), new THREE.Vector3(0,1,0));
 
 	//var buttonCenter = new THREE.Vector2(0,0);
 	
 	//calculate objects intersecting the picking ray
 	 var intersects = raycasterB.intersectObjects( scene.children, true );
-	 if(intersects[0] == undefined) {pressed3 = false; return;}
+//	 var intersects1 = raycasterA.intersectObjects( scene.children, true );
+
+	 if(intersects[0] == undefined /*|| intersects1[0]==undefined*/) {pressed3 = false; return;}
 	 //Println(intersects[0].object.position.x);
+	// if(intersects)
 	var posx = intersects[0].object.position.x;
 	var posy = intersects[0].object.position.y;
 	var posz = intersects[0].object.position.z;
