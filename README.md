@@ -46,6 +46,9 @@ if they will break through the wall of the map.
 - ***partially*** fixed the problem of the companion cube flying away when passing through the portal. This is probably the hardest fix to do, having to deal with the forces. Some major improvement has been done so far though.
 - fixed the problem of the signature radio from Portal that used to disappear,giving trouble with the loader.
 
+***Upcoming improvements***:
+- Change the system with which the pressure button activate, swapping from a raycast system to a collision callback-based system.
+
 Thanks for trying this game,and remember...
 
 ![Alt text](https://i.gyazo.com/8526fde911ebaa483f37ea63eb699a82.png)
