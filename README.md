@@ -34,6 +34,10 @@ if they will break through the wall of the map.
 - With some browsers version, ***you may have some things that are not loaded properly***, or even crashes before the start of the game,remaining stucked in the loading screen. In this case, I suggest to try with another browser.
 - if you are having trouble with the ***mouse being locked*** remember the command to enter and exit the locked mouse mode. If they are not working, it's because of some issue related to the browser itself
 - In some users the portalgun sound that occure when pressing L/R mouse button, use to be missing. It's an issue related to the loading of the browser. It will not break anything,exept the fact that the gun will not emit any sound when shooting
+- the game requires to render 3 cameras when the portals are up. This makes the game heavy, so ***be aware*** that without a computer with average performance requirement you may experience lag.
+- The video played in loop in the plasma TV, use to not render from time to time. 
+- the cubes happen to get stucked outside of the physic engine when trying to pass through a portal while having the cube grabbed.
+- Firefox experience more lag than other browsers. Chrome, Opera and Edge are recommended.
 
 ***Fixed bugs*** :
 - fixed the camera adjustment when coming out of a portal placed upside down,or with strange angles with respect to the other portal.
