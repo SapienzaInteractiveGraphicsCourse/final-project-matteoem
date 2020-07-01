@@ -39,6 +39,7 @@ if they will break through the wall of the map.
 - The video played in loop in the plasma TV, use to not render from time to time. 
 - the cubes happen to get stucked outside of the physic engine when trying to pass through a portal while having the cube grabbed.
 - Firefox experience more lag than other browsers. Chrome, Opera and Edge are recommended.
+- For few users, even with the optimal machine to run the game, heavy lag was experienced. This happened to be a very isolated event found only by two users. I'm investigating the reason behind this, but it is a hard bug to deal with given the fact that I cannot replicate such error with the machine I have.
 
 ***Fixed bugs*** :
 - fixed the camera adjustment when coming out of a portal placed upside down,or with strange angles with respect to the other portal.
